@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-CBV_Practice_Task" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Practice Task: Book Library System (CBV) | django-training</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://pragnakalp.github.io/django-training/CBV_Practice_Task"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Practice Task: Book Library System (CBV) | django-training"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/django-training/img/pk-color-128.png"><link data-rh="true" rel="canonical" href="https://pragnakalp.github.io/django-training/CBV_Practice_Task"><link data-rh="true" rel="alternate" href="https://pragnakalp.github.io/django-training/CBV_Practice_Task" hreflang="en"><link data-rh="true" rel="alternate" href="https://pragnakalp.github.io/django-training/CBV_Practice_Task" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Practice Task: Book Library System (CBV)","item":"https://pragnakalp.github.io/django-training/CBV_Practice_Task"}]}</script><link rel="stylesheet" href="/django-training/assets/css/styles.dd77c8c2.css">
+<script src="/django-training/assets/js/runtime~main.2d62e01b.js" defer="defer"></script>
+<script src="/django-training/assets/js/main.ea27e5dc.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/django-training/img/pk-color-128.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><a class="navbar__brand" href="/django-training/"><div class="navbar__logo"><img src="/django-training/img/pk-color-128.png" alt="django-training Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/django-training/img/pk-color-128.png" alt="django-training Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Django training</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/django-training/"><span title="Django Junior Training Documentation" class="linkLabel_WmDU">Django Junior Training Documentation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/django-training/Introduction_and_Setup"><span title="Part 1: Introduction &amp; Setup" class="linkLabel_WmDU">Part 1: Introduction &amp; Setup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/django-training/FBV_Models_and_Database"><span title="Part 2: Function-Based Views - Models &amp; Database" class="linkLabel_WmDU">Part 2: Function-Based Views - Models &amp; Database</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/django-training/FBV_Views_and_URLs"><span title="Part 3: Function-Based Views - Views &amp; URLs" class="linkLabel_WmDU">Part 3: Function-Based Views - Views &amp; URLs</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/django-training/FBV_Templates_and_Forms"><span title="Part 4: Function-Based Views - Templates &amp; Forms" class="linkLabel_WmDU">Part 4: Function-Based Views - Templates &amp; Forms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/django-training/FBV_Complete_Project"><span title="Part 5: Function-Based Views - Complete Project" class="linkLabel_WmDU">Part 5: Function-Based Views - Complete Project</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/django-training/CBV_Introduction"><span title="Part 6: Class-Based Views - Introduction" class="linkLabel_WmDU">Part 6: Class-Based Views - Introduction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/django-training/CBV_Generic_Views"><span title="Part 7: Class-Based Views - Generic Views &amp; Mixins" class="linkLabel_WmDU">Part 7: Class-Based Views - Generic Views &amp; Mixins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/django-training/CBV_Complete_Project"><span title="Part 8: Class-Based Views - Complete Project" class="linkLabel_WmDU">Part 8: Class-Based Views - Complete Project</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/django-training/CBV_Practice_Task"><span title="Practice Task: Book Library System (CBV)" class="linkLabel_WmDU">Practice Task: Book Library System (CBV)</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/django-training/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Practice Task: Book Library System (CBV)</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Practice Task: Book Library System (CBV)</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>Build a simple Book Library System using Class-Based Views to practice the concepts learned in CBV modules.</p>
+<p><strong>Focus</strong>: ListView, DetailView, CreateView, UpdateView, DeleteView, and Custom Mixins</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-youll-build">What You&#x27;ll Build<a href="#what-youll-build" class="hash-link" aria-label="Direct link to What You&#x27;ll Build" title="Direct link to What You&#x27;ll Build" translate="no">​</a></h2>
+<p>A book library management system with the following pages:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-book-list-page-books">1. <strong>Book List Page</strong> (<code>/books/</code>)<a href="#1-book-list-page-books" class="hash-link" aria-label="Direct link to 1-book-list-page-books" title="Direct link to 1-book-list-page-books" translate="no">​</a></h3>
+<ul>
+<li class="">Display all books in a paginated list (10 books per page)</li>
+<li class="">Show: Book title, author, genre, publication year, availability status</li>
+<li class="">Include search functionality (search by title or author)</li>
+<li class="">Filter by genre (Fiction, Non-Fiction, Science, History, Biography)</li>
+<li class="">Filter by availability (Available, Borrowed)</li>
+<li class="">Display statistics: Total books, Available books, Borrowed books</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-book-detail-page-booksid">2. <strong>Book Detail Page</strong> (<code>/books/&lt;id&gt;/</code>)<a href="#2-book-detail-page-booksid" class="hash-link" aria-label="Direct link to 2-book-detail-page-booksid" title="Direct link to 2-book-detail-page-booksid" translate="no">​</a></h3>
+<ul>
+<li class="">Show complete book information</li>
+<li class="">Display related books (same genre, exclude current book, limit to 5)</li>
+<li class="">Show &quot;Edit&quot; and &quot;Delete&quot; buttons</li>
+<li class="">Display borrowing history count (if book has been borrowed before)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-add-book-page-bookscreate">3. <strong>Add Book Page</strong> (<code>/books/create/</code>)<a href="#3-add-book-page-bookscreate" class="hash-link" aria-label="Direct link to 3-add-book-page-bookscreate" title="Direct link to 3-add-book-page-bookscreate" translate="no">​</a></h3>
+<ul>
+<li class="">Form to add a new book</li>
+<li class="">Fields: Title, Author, Genre, Publication Year, ISBN, Description, Availability Status</li>
+<li class="">Show success message after creation</li>
+<li class="">Redirect to book list after successful creation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-edit-book-page-booksidupdate">4. <strong>Edit Book Page</strong> (<code>/books/&lt;id&gt;/update/</code>)<a href="#4-edit-book-page-booksidupdate" class="hash-link" aria-label="Direct link to 4-edit-book-page-booksidupdate" title="Direct link to 4-edit-book-page-booksidupdate" translate="no">​</a></h3>
+<ul>
+<li class="">Pre-filled form with existing book data</li>
+<li class="">Same fields as Add Book page</li>
+<li class="">Show success message after update</li>
+<li class="">Redirect to book detail page after successful update</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-delete-book-page-booksiddelete">5. <strong>Delete Book Page</strong> (<code>/books/&lt;id&gt;/delete/</code>)<a href="#5-delete-book-page-booksiddelete" class="hash-link" aria-label="Direct link to 5-delete-book-page-booksiddelete" title="Direct link to 5-delete-book-page-booksiddelete" translate="no">​</a></h3>
+<ul>
+<li class="">Confirmation page before deletion</li>
+<li class="">Show book title and warning message</li>
+<li class="">&quot;Confirm Delete&quot; and &quot;Cancel&quot; buttons</li>
+<li class="">Redirect to book list after deletion</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-borrowed-books-page-booksborrowed">6. <strong>Borrowed Books Page</strong> (<code>/books/borrowed/</code>)<a href="#6-borrowed-books-page-booksborrowed" class="hash-link" aria-label="Direct link to 6-borrowed-books-page-booksborrowed" title="Direct link to 6-borrowed-books-page-booksborrowed" translate="no">​</a></h3>
+<ul>
+<li class="">List only borrowed books</li>
+<li class="">Same layout as Book List page</li>
+<li class="">Show when each book was borrowed (use updated_at field)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical-requirements">Technical Requirements<a href="#technical-requirements" class="hash-link" aria-label="Direct link to Technical Requirements" title="Direct link to Technical Requirements" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="models">Models<a href="#models" class="hash-link" aria-label="Direct link to Models" title="Direct link to Models" translate="no">​</a></h3>
+<p>You need to create a <code>Book</code> model with these fields (figure out the field types yourself):</p>
+<ul>
+<li class="">title</li>
+<li class="">author</li>
+<li class="">genre (choices: Fiction, Non-Fiction, Science, History, Biography)</li>
+<li class="">publication_year</li>
+<li class="">isbn</li>
+<li class="">description</li>
+<li class="">is_available (boolean)</li>
+<li class="">created_at (auto timestamp)</li>
+<li class="">updated_at (auto timestamp)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="views-to-implement">Views to Implement<a href="#views-to-implement" class="hash-link" aria-label="Direct link to Views to Implement" title="Direct link to Views to Implement" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>BookListView</strong> (ListView)</p>
+<ul>
+<li class="">Pagination: 10 items per page</li>
+<li class="">Search functionality</li>
+<li class="">Filter by genre and availability</li>
+<li class="">Add statistics to context</li>
+</ul>
+</li>
+<li class="">
+<p><strong>BookDetailView</strong> (DetailView)</p>
+<ul>
+<li class="">Display single book</li>
+<li class="">Add related books to context</li>
+</ul>
+</li>
+<li class="">
+<p><strong>BookCreateView</strong> (CreateView)</p>
+<ul>
+<li class="">Form for creating books</li>
+<li class="">Success message</li>
+</ul>
+</li>
+<li class="">
+<p><strong>BookUpdateView</strong> (UpdateView)</p>
+<ul>
+<li class="">Form for editing books</li>
+<li class="">Success message</li>
+</ul>
+</li>
+<li class="">
+<p><strong>BookDeleteView</strong> (DeleteView)</p>
+<ul>
+<li class="">Confirmation page</li>
+<li class="">Success message</li>
+</ul>
+</li>
+<li class="">
+<p><strong>BorrowedBooksView</strong> (ListView)</p>
+<ul>
+<li class="">Filter to show only borrowed books</li>
+<li class="">Reuse BookListView logic</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-mixins-to-create">Custom Mixins to Create<a href="#custom-mixins-to-create" class="hash-link" aria-label="Direct link to Custom Mixins to Create" title="Direct link to Custom Mixins to Create" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>SuccessMessageMixin</strong></p>
+<ul>
+<li class="">Automatically add success messages on form submission</li>
+<li class="">Reusable across Create and Update views</li>
+</ul>
+</li>
+<li class="">
+<p><strong>BookStatsMixin</strong></p>
+<ul>
+<li class="">Add book statistics to context</li>
+<li class="">Reusable across list views</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-you-need-to-figure-out">What You Need to Figure Out<a href="#what-you-need-to-figure-out" class="hash-link" aria-label="Direct link to What You Need to Figure Out" title="Direct link to What You Need to Figure Out" translate="no">​</a></h2>
+<ol>
+<li class=""><strong>Model Definition</strong>: Define the Book model with appropriate field types</li>
+<li class=""><strong>Form Creation</strong>: Create a ModelForm for Book</li>
+<li class=""><strong>URL Patterns</strong>: Set up URL routing for all views</li>
+<li class=""><strong>Templates</strong>: Create templates for each page (basic HTML structure)</li>
+<li class=""><strong>View Logic</strong>: Implement filtering, searching, and pagination</li>
+<li class=""><strong>Mixins</strong>: Create reusable mixins for common functionality</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="success-criteria">Success Criteria<a href="#success-criteria" class="hash-link" aria-label="Direct link to Success Criteria" title="Direct link to Success Criteria" translate="no">​</a></h2>
+<p>✅ All 6 pages work correctly<br>
+<!-- -->✅ Pagination works on list pages<br>
+<!-- -->✅ Search finds books by title or author<br>
+<!-- -->✅ Filters work for genre and availability<br>
+<!-- -->✅ Statistics display correctly<br>
+<!-- -->✅ Related books show on detail page<br>
+<!-- -->✅ Forms validate and save data<br>
+<!-- -->✅ Success messages appear after actions<br>
+<!-- -->✅ Delete confirmation works<br>
+<!-- -->✅ Custom mixins are reused across views</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bonus-challenges-optional">Bonus Challenges (Optional)<a href="#bonus-challenges-optional" class="hash-link" aria-label="Direct link to Bonus Challenges (Optional)" title="Direct link to Bonus Challenges (Optional)" translate="no">​</a></h2>
+<ol>
+<li class=""><strong>Add sorting</strong>: Allow users to sort by title, author, or publication year</li>
+<li class=""><strong>Genre statistics</strong>: Show count of books per genre</li>
+<li class=""><strong>Recent additions</strong>: Show 5 most recently added books on list page</li>
+<li class=""><strong>Export functionality</strong>: Add a button to download book list as CSV</li>
+<li class=""><strong>Bulk actions</strong>: Select multiple books and mark as available/borrowed</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-started">Getting Started<a href="#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started" translate="no">​</a></h2>
+<ol>
+<li class="">Create a new Django project: <code>django-admin startproject library</code></li>
+<li class="">Create a new app: <code>python manage.py startapp books</code></li>
+<li class="">Define your Book model</li>
+<li class="">Create and run migrations</li>
+<li class="">Create your forms</li>
+<li class="">Implement views one by one</li>
+<li class="">Create templates</li>
+<li class="">Set up URLs</li>
+<li class="">Test each feature</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="expected-project-structure">Expected Project Structure<a href="#expected-project-structure" class="hash-link" aria-label="Direct link to Expected Project Structure" title="Direct link to Expected Project Structure" translate="no">​</a></h2>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">library/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── manage.py</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── library/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── settings.py</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── urls.py</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── books/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── models.py          # Book model</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── forms.py           # BookForm</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── views.py           # All CBV views</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── mixins.py          # Custom mixins</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── urls.py            # URL patterns</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    └── templates/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        └── books/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ├── book_list.html</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ├── book_detail.html</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ├── book_form.html</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ├── book_confirm_delete.html</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            └── borrowed_books.html</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="testing-checklist">Testing Checklist<a href="#testing-checklist" class="hash-link" aria-label="Direct link to Testing Checklist" title="Direct link to Testing Checklist" translate="no">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Create 15+ books with different genres</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Test pagination (should show 10 per page)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Search for books by title</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Search for books by author</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Filter by each genre</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Filter by availability status</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->View book details</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Check related books appear</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Create a new book</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Edit an existing book</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Delete a book</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->View borrowed books page</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify statistics are correct</li>
+</ul>
+<hr>
+<p><strong>Good luck! Focus on understanding how CBV components work together rather than making it perfect. The goal is to practice ListView, DetailView, CreateView, UpdateView, DeleteView, and custom mixins.</strong></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/pragnakalp/django-training/tree/main/docs/CBV_Practice_Task.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/django-training/CBV_Complete_Project"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Part 8: Class-Based Views - Complete Project</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#what-youll-build" class="table-of-contents__link toc-highlight">What You&#39;ll Build</a><ul><li><a href="#1-book-list-page-books" class="table-of-contents__link toc-highlight">1. <strong>Book List Page</strong> (<code>/books/</code>)</a></li><li><a href="#2-book-detail-page-booksid" class="table-of-contents__link toc-highlight">2. <strong>Book Detail Page</strong> (<code>/books/&lt;id&gt;/</code>)</a></li><li><a href="#3-add-book-page-bookscreate" class="table-of-contents__link toc-highlight">3. <strong>Add Book Page</strong> (<code>/books/create/</code>)</a></li><li><a href="#4-edit-book-page-booksidupdate" class="table-of-contents__link toc-highlight">4. <strong>Edit Book Page</strong> (<code>/books/&lt;id&gt;/update/</code>)</a></li><li><a href="#5-delete-book-page-booksiddelete" class="table-of-contents__link toc-highlight">5. <strong>Delete Book Page</strong> (<code>/books/&lt;id&gt;/delete/</code>)</a></li><li><a href="#6-borrowed-books-page-booksborrowed" class="table-of-contents__link toc-highlight">6. <strong>Borrowed Books Page</strong> (<code>/books/borrowed/</code>)</a></li></ul></li><li><a href="#technical-requirements" class="table-of-contents__link toc-highlight">Technical Requirements</a><ul><li><a href="#models" class="table-of-contents__link toc-highlight">Models</a></li><li><a href="#views-to-implement" class="table-of-contents__link toc-highlight">Views to Implement</a></li><li><a href="#custom-mixins-to-create" class="table-of-contents__link toc-highlight">Custom Mixins to Create</a></li></ul></li><li><a href="#what-you-need-to-figure-out" class="table-of-contents__link toc-highlight">What You Need to Figure Out</a></li><li><a href="#success-criteria" class="table-of-contents__link toc-highlight">Success Criteria</a></li><li><a href="#bonus-challenges-optional" class="table-of-contents__link toc-highlight">Bonus Challenges (Optional)</a></li><li><a href="#getting-started" class="table-of-contents__link toc-highlight">Getting Started</a></li><li><a href="#expected-project-structure" class="table-of-contents__link toc-highlight">Expected Project Structure</a></li><li><a href="#testing-checklist" class="table-of-contents__link toc-highlight">Testing Checklist</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">
+            <style>
+              .footer-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2rem;
+                font-size: 1.1rem;
+                gap: 1rem;
+                line-height: 1.6;
+              }
+              
+              @media (max-width: 768px) {
+                .footer-container {
+                  flex-direction: column;
+                  text-align: center;
+                  justify-content: center;
+                  font-size: 1rem;
+                }
+              }
+            </style>
+            
+            <div class="footer-container">
+              
+              <div>
+                Copyright © 2026
+                <a href="https://pragnakalp.com" target="_blank" rel="noopener noreferrer" style="color: #0ea5e9; text-decoration: none; font-weight: 500; margin-left: 0.25rem;">
+                  Pragnakalp Techlabs
+                </a>
+              </div>
+
+              <div>
+                <strong>Contributors:</strong> Rahul, Nikunj, Neel, Meet, Dhvanil, Mansi, Darshit
+              </div>
+
+            </div>
+          </div></div></div></footer></div>
+</body>
+</html>
